@@ -1,0 +1,123 @@
+@import "../../commonstyles/variables.scss";
+
+.hamburger {
+    display: none;
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-2%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes shrink {
+        0% {
+            width: 95%;
+        }
+        100% {
+            width: 90%;
+        }
+    }
+
+    .menuList.container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        opacity: 0.97;
+        color: #fafafa;
+        transition: height 0.3s ease;
+        z-index: 4;
+
+        .menuList {
+            padding-top: 3rem;
+        }
+    }
+
+    .menuButton.container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+        background: white;
+        width: 100%;
+        color: $grey3;
+    }
+
+    .item.container {
+        opacity: 0;
+        animation: 1s appear forwards;
+
+        .menuItem {
+            font-size: 1.2rem;
+            margin: 0 5%;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
+            animation: 0.5s slideIn forwards;
+
+            a {
+                padding: 1rem 0;
+                display: block;
+                color: $grey3;
+                cursor: pointer;
+            }
+
+        }
+
+        .line {
+            width: 90%;
+            height: 1px;
+            background: $grey1;
+            margin: 0 auto;
+            animation: 0.5s shrink forwards;
+
+        }
+    }
+
+    .logo {
+        margin: 0 auto;
+        transform: translateX(-20px);
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        font-size: 1.15rem;
+
+        .brandName {
+
+            &:first-letter {
+                color: $brandColor;
+            }
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        transition: filter 0.5s ease;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hamburger {
+        display: initial;
+    }
+}

@@ -1,0 +1,3 @@
+export const WINDOW_CLICK = 'WINDOW_CLICK';
+export const WINDOW_SCROLL = 'WINDOW_SCROLL';
+export const USER_LOGGED_IN = 'USER_LOGGED_IN';

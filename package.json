@@ -1,0 +1,57 @@
+{
+  "name": "Logger_Example",
+  "version": "0.1.0",
+  "private": false,
+  "homepage": "./",
+  "dependencies": {
+    "antd": "^3.21.4",
+    "babel-plugin-dynamic-import-node": "^2.0.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react-app": "^3.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "file-loader": "^1.1.6",
+    "ignore-styles": "^5.0.1",
+    "localforage": "^1.7.3",
+    "node-cache": "^4.2.0",
+    "node-fetch": "^2.3.0",
+    "prop-types": "^15.6.2",
+    "ramda": "^0.26.0",
+    "rc-slider": "^8.6.5",
+    "react": "^16.6.3",
+    "react-calendar": "^2.17.5",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "react-loadable": "^5.3.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.3.1",
+    "react-router-config": "^4.4.0-beta.6",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "url-loader": "^1.0.1",
+    "why-did-you-update": "^1.0.6",
+    "window-or-global": "^1.0.1"
+  },
+  "scripts": {
+    "start": "PORT=8886 node scripts/customized-config start",
+    "build": "node scripts/customized-config build",
+    "build:local": "REACT_APP_ENV=development node scripts/customized-config build",
+    "server": "NODE_ENV=production node server/bootstrap.js",
+    "server:local": "NODE_ENV=development node $NODE_DEBUG_OPTION server/bootstrap.js"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "node-sass": "^4.10.0",
+    "rewire": "^4.0.1",
+    "source-map-explorer": "^1.6.0",
+    "webfonts-loader": "^4.1.0"
+  }
+}
