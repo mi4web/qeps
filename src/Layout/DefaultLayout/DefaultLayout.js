@@ -11,7 +11,6 @@ class DefaultLayout extends Component {
     render() {
         return (
             <div className="mainContainer">
-                <NavBar items={NAV}></NavBar>
                 {this.props.children}
             </div>
         );

@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import Router from "../../routes/routes";
 import './App.scss';
+import { NAV } from "../../constants/appConstants";
+import NavBar from "../Nav/NavBar";
 
 
 class App extends Component {
@@ -18,6 +20,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <NavBar items={NAV}></NavBar>
                 <Router></Router>
             </div>
         );

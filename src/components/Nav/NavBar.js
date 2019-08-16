@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import ReactWOW from 'react-wow'
 import './Navbar.scss';
+import 'animate.css';
 import { getPathByName } from "../../routes/routerManager";
-import Hamburger from "../Hamburger/Hamburger";
 
 class NavBar extends Component {
     render() {
@@ -13,9 +13,13 @@ class NavBar extends Component {
                 <nav className="navbar">
                     {items.map((item, index) => {
 
-                        return <NavLink to={getPathByName(item.route)} activeClassName="active" key={index} exact>
-                            <span>{item.text}</span>
-                        </NavLink>
+                        return (
+                            <ReactWOW animation='bounceIn' delay={0.1 * (index + 1) + 's'}>
+                                <NavLink to={getPathByName(item.route)} activeClassName="active" key={index} exact>
+                                    <span>{item.text}</span>
+                                </NavLink>
+                            </ReactWOW>)
+
                     })}
                 </nav>
             </div>

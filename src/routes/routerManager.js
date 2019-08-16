@@ -9,15 +9,15 @@ const routes = {
         name: Route.LANDING
     },
     vision: {
-        path: BASE_URL,
+        path: '/vision',
         name: Route.VISION
     },
     about: {
-        path: BASE_URL,
+        path: '/about',
         name: Route.ABOUT
     },
     contact: {
-        path: BASE_URL,
+        path: '/contact',
         name: Route.CONTACT
     }
 };
