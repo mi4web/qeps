@@ -1,0 +1,15 @@
+{
+  "main.css": "./static/css/main.16808daf.chunk.css",
+  "main.js": "./static/js/main.cd60aec9.chunk.js",
+  "PageNotFound.js": "./static/js/PageNotFound.66ac5859.chunk.js",
+  "static/css/2.c7b2639b.chunk.css": "./static/css/2.c7b2639b.chunk.css",
+  "static/js/2.9daf3940.chunk.js": "./static/js/2.9daf3940.chunk.js",
+  "runtime~main.js": "./static/js/runtime~main.003b3813.js",
+  "static/media/App.scss": "./static/media/logo.66a7d59a.png",
+  "static/media/Home.scss": "./static/media/book-stack.32e0360d.jpg",
+  "static/css/main.16808daf.chunk.css.map": "./static/css/main.16808daf.chunk.css.map",
+  "static/css/2.c7b2639b.chunk.css.map": "./static/css/2.c7b2639b.chunk.css.map",
+  "index.html": "./index.html",
+  "precache-manifest.d220e454c5bc77dbb7d71a7ae33f11d3.js": "./precache-manifest.d220e454c5bc77dbb7d71a7ae33f11d3.js",
+  "service-worker.js": "./service-worker.js"
+}

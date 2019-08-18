@@ -39,7 +39,7 @@
   },
   "scripts": {
     "start": "PORT=8886 node scripts/customized-config start",
-    "build": "node scripts/customized-config build",
+    "build": "node scripts/customized-config build && rm -rf docs && mv build docs",
     "build:local": "REACT_APP_ENV=development node scripts/customized-config build",
     "server": "NODE_ENV=production node server/bootstrap.js",
     "server:local": "NODE_ENV=development node $NODE_DEBUG_OPTION server/bootstrap.js"
