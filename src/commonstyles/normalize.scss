@@ -1,25 +1,24 @@
 @import './variables.scss';
 
 html {
-    -webkit-text-size-adjust: 100%;
-    box-sizing: border-box;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    text-rendering: optimizeLegibility;
-    font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  font-size: 14px;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 iframe {
-    border: 0;
+  border: 0;
 }
-
 
 body,
 button,
@@ -27,31 +26,31 @@ input,
 pre,
 select,
 textarea {
-    font-family: Roboto, Helvetica, Arial; //font-display: auto;
+  font-family: 'Courgette', cursive;
 }
 
 code,
 pre {
-    -moz-osx-font-smoothing: auto;
-    -webkit-font-smoothing: auto;
-    line-height: 1.5px;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  line-height: 1.5px;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 body {
-    background: white;
-    height: 100%;
-    margin: 0 auto;
-    font-size: 14px;
-    color: $text-primary;
-    width: 100%;
+  background: white;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+  color: $text-primary;
+  width: 100%;
 }
 
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 button:focus,
@@ -59,14 +58,14 @@ div[role="button"]:focus,
 input:focus,
 select:focus,
 textarea:focus {
-    outline: none;
+  outline: none;
 }
 
 ol,
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -76,12 +75,15 @@ h4,
 h5,
 h6,
 figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+html, body, #root {
+  height: 100%;
 }

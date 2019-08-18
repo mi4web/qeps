@@ -19,6 +19,10 @@ const routes = {
     contact: {
         path: '/contact',
         name: Route.CONTACT
+    },
+    facilities: {
+        path: '/facilities',
+        name: Route.FACILITIES
     }
 };
 

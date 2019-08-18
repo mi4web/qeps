@@ -11,8 +11,8 @@
         a {
             text-decoration: none;
             text-transform: capitalize;
-            font-size: 0.85rem;
-            padding: 20px;
+            font-size: 18px;
+            padding: 12px;
             transition: color ease-in 200ms;
 
             &:first-child {
@@ -20,7 +20,7 @@
             }
 
             &:not(:last-child) {
-                margin-right: 25px;
+                margin-right: 10px;
             }
 
             &:hover, &.active {
@@ -36,7 +36,7 @@
             span {
                 position: relative;
                 padding-bottom: 10px;
-                font-size: 22px;
+                font-size: 16px;
 
                 &:after {
                     content: ' ';

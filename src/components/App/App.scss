@@ -1,1 +1,26 @@
 @import '../../commonstyles/commoncss';
+@import '../../commonstyles/flex';
+
+.header {
+  @extend .flex-row;
+  justify-content: space-between;
+  > .logo {
+    background: url('../../img/logo.png');
+    height: 80px;
+    width: 80px;
+
+  }
+  > .brand {
+    @extend .flex-row;
+    @extend .a-c;
+    h1 {
+      font-size: 30px;
+      color: $brandColor;
+    }
+    > img {
+      height: 100px;
+      width: 100px;
+      padding: 20px;
+    }
+  }
+}

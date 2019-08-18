@@ -10,48 +10,53 @@ import Vision from "../views/Vision/Vision";
 
 
 const AsyncPageNotFound = Loadable({
-    loader: () => import(/* webpackChunkName: "PageNotFound" */ '../views/PageNotFound'),
-    loading: () => <div className="hide">loading page...</div>,
+  loader: () => import(/* webpackChunkName: "PageNotFound" */ '../views/PageNotFound'),
+  loading: () => <div className="hide">loading page...</div>,
 });
 
 const LandingPage = Loadable({
-    loader: () => import(/* webpackChunkName: "Home" */ '../views/Home/Home'),
-    loading: () => <div className="hide">loading page...</div>,
+  loader: () => import(/* webpackChunkName: "Home" */ '../views/Home/Home'),
+  loading: () => <div className="hide">loading page...</div>,
 });
 
 
 export const routes = [
-    {
-        path: getPathByName(routeNames.LANDING),
-        component: Home,
-        exact: true
-    },
-    {
-        path: getPathByName(routeNames.ABOUT),
-        component: About,
-        exact: true
-    },
-    {
-        path: getPathByName(routeNames.VISION),
-        component: Vision,
-        exact: true
-    }
+  {
+    path: getPathByName(routeNames.LANDING),
+    component: Home,
+    exact: true
+  },
+  {
+    path: getPathByName(routeNames.ABOUT),
+    component: About,
+    exact: true
+  },
+  {
+    path: getPathByName(routeNames.VISION),
+    component: Vision,
+    exact: true
+  },
+  {
+    path: getPathByName(routeNames.FACILITIES),
+    component: Vision,
+    exact: true
+  }
 ];
 
 
 class Router extends Component {
 
 
-    render() {
-        return (
-            <React.Fragment>
-                <Switch>
-                    {routes.map((r, i) => <Route {...this.props} path={r.path} component={r.component} key={i} exact/>)}
-                    <Route component={AsyncPageNotFound}/>
-                </Switch>
-            </React.Fragment>
-        );
-    }
+  render() {
+    return (
+        <React.Fragment>
+          <Switch>
+            {routes.map((r, i) => <Route {...this.props} path={r.path} component={r.component} key={i} exact/>)}
+            <Route component={AsyncPageNotFound}/>
+          </Switch>
+        </React.Fragment>
+    );
+  }
 
 
 }

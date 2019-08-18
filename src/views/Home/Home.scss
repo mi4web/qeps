@@ -1,0 +1,38 @@
+@import "../../commonstyles/flex";
+@import "../../commonstyles/variables";
+
+.home {
+
+  background-size: contain;
+  height: 100%;
+
+  .titleWrapper {
+    flex-grow: 1;
+    @extend .flex-row;
+    @extend .j-c;
+    margin-top: 50px;
+    .title {
+      font-size: 50px;
+      text-align: center;
+      .first {
+        text-shadow: 0 4px 6px #ffffff;
+        color: $brandColor;
+      }
+      .second {
+        margin-top: 20px;
+        text-shadow: 0 4px 6px #ffffff;
+        color: $brandColor;
+      }
+      .and {
+        color: white;
+        text-shadow: 0 4px 6px $brandColor;
+      }
+    }
+  }
+}
+
+#root {
+  background: url('./../../img/extras/book-stack.jpg');
+  background-size: cover;
+  background-position: 0 70%;
+}
