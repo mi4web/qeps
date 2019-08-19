@@ -6,6 +6,9 @@ import 'animate.css';
 import { getPathByName } from "../../routes/routerManager";
 
 class NavBar extends Component {
+    componentDidMount() {
+    }
+
     render() {
         const { items, location: { path } } = this.props;
         return (
@@ -15,9 +18,9 @@ class NavBar extends Component {
 
                         return (
                             <ReactWOW animation='bounceIn' delay={0.1 * (index + 1) + 's'}>
-                                <NavLink to={getPathByName(item.route)} activeClassName="active" key={index} exact>
-                                    <span>{item.text}</span>
-                                </NavLink>
+                                <a href={`#${item.href}`}>
+                                    {item.text}
+                                </a>
                             </ReactWOW>)
 
                     })}

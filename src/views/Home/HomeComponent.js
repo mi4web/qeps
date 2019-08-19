@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import ReactWow from 'react-wow';
 import PropTypes from 'prop-types';
+import { REFS } from "../../constants/appConstants";
+import routeNames from "../../routes/routeNames";
 
 class HomeComponent extends Component {
   render() {
     return (
-        <div className='home'>
+        <div className='home' id={REFS[routeNames.LANDING]}>
           <div className="titleWrapper">
             <div className='title'>
               <ReactWow animation='slideInRight'>

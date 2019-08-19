@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import ReactWoW from 'react-wow';
 import SideHead from "../../components/SideHead/SideHead";
 import './About.scss';
+import { REFS } from "../../constants/appConstants";
+import routeNames from "../../routes/routeNames";
 
 class AboutComponent extends Component {
     render() {
         return (
-            <div className="about">
+            <div className="about" id={REFS[routeNames.ABOUT]}>
                 <SideHead heading={'About Us'}>
                     <ReactWoW animation='fadeIn'>
                         <div className='aboutContent'>

@@ -5,6 +5,7 @@ import VisionComponent from "./../Vision/VisionComponent";
 import './Home.scss';
 import AboutComponent from "../About/AboutComponent";
 import FacilitiesComponent from "../Facilities/FacilitiesComponent";
+import ContactComponent from "../Contact/ContactComponent";
 
 class Home extends Component {
     componentDidMount() {
@@ -18,6 +19,7 @@ class Home extends Component {
                 <AboutComponent/>
                 <VisionComponent/>
                 <FacilitiesComponent/>
+                <ContactComponent/>
             </DefaultLayout>
         )
     }

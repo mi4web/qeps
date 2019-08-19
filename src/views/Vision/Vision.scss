@@ -4,7 +4,7 @@
     height: 100%;
     background: url('./../../img/extras/aim.jpg');
     background-size: cover;
-    background-position: 0 50%;
+    background-position: 25% 50%;
     background-attachment: fixed;
     padding-top: 125px;
 
@@ -21,6 +21,7 @@
             font-size: 20px;
             li {
                 padding-bottom: 10px;
+                line-height: 25px;
 
                 &:before {
                     content: '→';

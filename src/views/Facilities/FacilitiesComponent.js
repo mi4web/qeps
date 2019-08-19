@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import ReactWoW from 'react-wow';
 import SideHead from "../../components/SideHead/SideHead";
 import './Facilities.scss';
+import { REFS } from "../../constants/appConstants";
+import routeNames from "../../routes/routeNames";
 
 class FacilitiesComponent extends Component {
     render() {
         return (
-            <div className="facilities">
+            <div className="facilities" id={REFS[routeNames.FACILITIES]}>
                 <SideHead heading={'Facilities'}>
                     <div className="flex-row content">
                         <ul className="items">

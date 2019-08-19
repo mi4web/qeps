@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import ReactWoW from 'react-wow';
 import './Vision.scss';
 import SideHead from "../../components/SideHead/SideHead";
+import { REFS } from "../../constants/appConstants";
+import routeNames from "../../routes/routeNames";
 
 class VisionComponent extends Component {
     render() {
         return (
-            <div className='vision'>
-                <SideHead heading={'Vision'}>
+            <div className='vision' id={REFS[routeNames.VISION]}>
+                <SideHead heading={'Our Aim'}>
                     <div className="visionContent">
                         <div className='title'>
-                            <span className="secondaryColor">"</span>The school aims to provide a platform to its students to acquire the wealth of
+                            <span className="secondaryColor">"</span>The School aims to provide a platform to its students to acquire the wealth of
                             knowledge upholding the ethical and moral values
                             <span className="secondaryColor">"</span>
                         </div>
