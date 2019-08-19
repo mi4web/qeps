@@ -1,0 +1,18 @@
+@import "../../commonstyles/variables.scss";
+
+.sideHead {
+    position: sticky;
+    top: 125px;
+    .heading {
+        font-size: 35px;
+        padding-top: 30px;
+        padding-left: 25px;
+        font-weight: 500;
+        border-bottom: 5px solid $secondaryColor;
+        display: inline-block;
+        color: $brandColor;
+    }
+    > .content {
+        padding: 0 50px;
+    }
+}

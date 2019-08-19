@@ -5,8 +5,6 @@ import Loadable from 'react-loadable';
 import Home from "../views/Home/Home";
 import {getPathByName} from "./routerManager";
 import routeNames from './routeNames';
-import About from "../views/About/About";
-import Vision from "../views/Vision/Vision";
 
 
 const AsyncPageNotFound = Loadable({
@@ -24,21 +22,6 @@ export const routes = [
   {
     path: getPathByName(routeNames.LANDING),
     component: Home,
-    exact: true
-  },
-  {
-    path: getPathByName(routeNames.ABOUT),
-    component: About,
-    exact: true
-  },
-  {
-    path: getPathByName(routeNames.VISION),
-    component: Vision,
-    exact: true
-  },
-  {
-    path: getPathByName(routeNames.FACILITIES),
-    component: Vision,
     exact: true
   }
 ];

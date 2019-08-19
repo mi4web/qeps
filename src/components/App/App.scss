@@ -4,6 +4,13 @@
 .header {
   @extend .flex-row;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 125px;
+  max-width: 1500px;
+  margin: 0 auto;
   > .logo {
     background: url('../../img/logo.png');
     height: 80px;

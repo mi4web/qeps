@@ -3,14 +3,19 @@
 
 .home {
 
-  background-size: contain;
   height: 100%;
+  background: url('./../../img/extras/book-stack.jpg');
+  background-size: cover;
+  background-position: 0 70%;
+  background-attachment: fixed;
+  @extend .flex-row;
+  @extend .a-c;
 
   .titleWrapper {
     flex-grow: 1;
     @extend .flex-row;
     @extend .j-c;
-    margin-top: 50px;
+    margin-top: -40px;
     .title {
       font-size: 50px;
       text-align: center;
@@ -31,8 +36,9 @@
   }
 }
 
-#root {
+/*#root {
   background: url('./../../img/extras/book-stack.jpg');
   background-size: cover;
   background-position: 0 70%;
-}
+  background-attachment: fixed;
+}*/

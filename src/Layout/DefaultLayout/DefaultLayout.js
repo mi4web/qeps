@@ -9,11 +9,7 @@ class DefaultLayout extends Component {
 
 
     render() {
-        return (
-            <div className="mainContainer">
-                {this.props.children}
-            </div>
-        );
+        return this.props.children;
     }
 }
 

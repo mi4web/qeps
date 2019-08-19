@@ -1,0 +1,45 @@
+@import '../../commonstyles/flex';
+@import '../../commonstyles/variables';
+
+.facilities {
+    height: 100%;
+    background: url('./../../img/extras/flowers.jpg');
+    background-size: cover;
+    background-position: 0 50%;
+    background-attachment: fixed;
+    padding-top: 125px;
+
+    .content {
+        @extend .j-sb;
+        padding-top: 30px;
+
+        ul {
+            flex-basis: 40%;
+            font-size: 24px;
+
+            li {
+                padding: 10px 20px;
+
+                &:before {
+                    content: '→';
+                }
+            }
+        }
+    }
+
+    .bottom {
+        padding-top: 40px;
+        font-size: 24px;
+        text-align: center;
+
+        li {
+            padding-bottom: 20px;
+
+            &:before {
+                color: $brandColor;
+                content: '→';
+            }
+        }
+    }
+
+}
