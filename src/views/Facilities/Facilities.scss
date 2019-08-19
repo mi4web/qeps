@@ -43,3 +43,27 @@
     }
 
 }
+
+@media only screen and (max-width: 767px) {
+    .facilities {
+        height: auto;
+        padding-top: 100px;
+        background-position: 20% 50%;
+        .content {
+            .content {
+                flex-direction: column;
+            }
+        }
+        .bottom {
+            text-align: left;
+            padding-top: 0;
+            li {
+                &:before {
+                    color: $brandColor;
+                    content: '→';
+                }
+            }
+        }
+    }
+}
+

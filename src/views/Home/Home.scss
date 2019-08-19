@@ -8,17 +8,21 @@
   background-size: cover;
   background-position: 0 70%;
   background-attachment: fixed;
-  @extend .flex-row;
+  @extend .flex-col;
   @extend .a-c;
+  @extend .j-c;
 
   .titleWrapper {
-    flex-grow: 1;
     @extend .flex-row;
     @extend .j-c;
     margin-top: -40px;
+    flex-grow: 1;
     .title {
       font-size: 50px;
       text-align: center;
+      @extend .flex-col;
+      @extend .j-c;
+      @extend .a-c;
       .first {
         text-shadow: 0 4px 6px #ffffff;
         color: $brandColor;
@@ -33,6 +37,12 @@
         text-shadow: 0 4px 6px $brandColor;
       }
     }
+  }
+  .info {
+    flex-grow: 0;
+    font-size: 26px;
+    color: $brandColor;
+
   }
 }
 

@@ -4,14 +4,14 @@
 .header {
   @extend .flex-row;
   justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  z-index: 1;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   height: 125px;
-  max-width: 1500px;
-  margin: 0 auto;
-  z-index: 1;
   > .logo {
     background: url('../../img/logo.png');
     height: 80px;
@@ -29,6 +29,24 @@
       height: 100px;
       width: 100px;
       padding: 20px;
+    }
+    .subtitle {
+      text-align: right;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .header {
+    .brand {
+      background-color: $secondaryColor;
+      .subtitle {
+        color: $brandColor;
+        text-align: left;
+      }
     }
   }
 }

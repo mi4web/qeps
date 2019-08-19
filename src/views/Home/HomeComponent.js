@@ -29,6 +29,9 @@ class HomeComponent extends Component {
               </div>
             </div>
           </div>
+          <marquee className='info'>
+            A CBSE Curriculum English medium School (Nursery to X)
+          </marquee>
         </div>
     );
   }

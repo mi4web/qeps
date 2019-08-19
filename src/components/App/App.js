@@ -6,6 +6,7 @@ import './App.scss';
 import {NAV} from "../../constants/appConstants";
 import NavBar from "../Nav/NavBar";
 import logo from '../../img/logo.png';
+import Hamburger from "../Hamburger/Hamburger";
 
 
 class App extends Component {
@@ -21,12 +22,16 @@ class App extends Component {
     return (
         <React.Fragment>
           <div className='header'>
-            <div className='brand'>
+            <a className='brand' href='#home'>
               <img src={logo} alt=""/>
-              <h1>Quari English Public School</h1>
-            </div>
+              <div>
+                <h1>Quari English Public School</h1>
+                <div className='subtitle'>(With Hostel)</div>
+              </div>
+            </a>
             <NavBar items={NAV}></NavBar>
           </div>
+          <Hamburger />
           <Router></Router>
         </React.Fragment>
     );

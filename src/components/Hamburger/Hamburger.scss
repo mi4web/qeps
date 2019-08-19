@@ -31,9 +31,9 @@
     }
 
     .menuList.container {
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -49,16 +49,14 @@
     }
 
     .menuButton.container {
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: fixed;
+        top: 10px;
+        right: 10px;
         z-index: 99;
-        opacity: 0.9;
         display: flex;
         align-items: center;
-        background: white;
-        width: 100%;
         color: $grey3;
+        width: 40px;
     }
 
     .item.container {
@@ -75,7 +73,7 @@
             a {
                 padding: 1rem 0;
                 display: block;
-                color: $grey3;
+                color: $secondaryColor;
                 cursor: pointer;
             }
 

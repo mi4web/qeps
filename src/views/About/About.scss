@@ -1,16 +1,26 @@
 .about {
-    height: 100%;
-    background: url('./../../img/extras/wall.jpg');
-    background-size: cover;
-    background-position: 0 50%;
-    background-attachment: fixed;
-    padding-top: 125px;
+  height: 100%;
+  background: url('./../../img/extras/wall.jpg');
+  background-size: cover;
+  background-position: 0 50%;
+  background-attachment: fixed;
+  padding-top: 125px;
 
+  .aboutContent {
+    max-width: 700px;
+    font-size: 24px;
+    margin: 0 auto;
+    padding-top: 50px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about {
+    height: auto;
+    padding-top: 100px;
     .aboutContent {
-        max-width: 700px;
-        font-size: 24px;
-        margin: 0 auto;
-        padding-top: 50px;
-        line-height: 40px;
+      padding-top: 10px;
     }
+  }
 }

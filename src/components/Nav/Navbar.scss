@@ -46,10 +46,16 @@
                     left: 0;
                     height: 2px;
                     background-color: $brandColor;
-                    width: 0%;
+                    width: 0;
                 }
             }
 
         }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navigation {
+        display: none;
     }
 }

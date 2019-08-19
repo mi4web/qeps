@@ -1,33 +1,49 @@
 @import '../../commonstyles/variables';
 
 .vision {
-    height: 100%;
-    background: url('./../../img/extras/aim.jpg');
-    background-size: cover;
-    background-position: 25% 50%;
-    background-attachment: fixed;
-    padding-top: 125px;
+  height: 100%;
+  padding-top: 125px;
+  background: url('./../../img/extras/aim.jpg');
+  background-size: cover;
+  background-position: 100% 50%;
+  background-attachment: fixed;
+  .visionContent {
+    padding-left: 400px;
 
-    .visionContent {
-        padding-left: 400px;
-
-        > .title {
-            font-size: 30px;
-            color: $brandColor;
-        }
-        ul {
-            padding-top: 40px;
-            font-weight: 400;
-            font-size: 20px;
-            li {
-                padding-bottom: 10px;
-                line-height: 25px;
-
-                &:before {
-                    content: '→';
-                    color: $brandColor;
-                }
-            }
-        }
+    > .title {
+      font-size: 30px;
+      color: $brandColor;
     }
+    ul {
+      padding-top: 40px;
+      font-weight: 400;
+      font-size: 20px;
+      li {
+        padding-bottom: 10px;
+        line-height: 25px;
+
+        &:before {
+          content: '→';
+          color: $brandColor;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .vision {
+
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .vision {
+    padding-top: 100px;
+    height: auto;
+    background-position: 100% 50%;
+    .visionContent {
+      padding-left: 0;
+    }
+  }
 }
