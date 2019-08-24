@@ -7,7 +7,7 @@ import {HashRouter, BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './components/App/App';
 import configureStore from './store/configureStore';
-// import registerServiceWorker from './serviceWorker/registerServiceWorker';
+import registerServiceWorker from './serviceWorker/registerServiceWorker';
 
 import {initializeGlobalEvent} from "./common/events";
 
@@ -32,4 +32,4 @@ window.onload = () => {
 };
 
 
-//registerServiceWorker();
+registerServiceWorker();
