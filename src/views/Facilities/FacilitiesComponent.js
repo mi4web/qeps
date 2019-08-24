@@ -37,7 +37,7 @@ class FacilitiesComponent extends Component {
                         <ul className="items">
                             <ReactWoW animation='slideInRight' delay='0.4s'>
                                 <li className="item">
-                                    Admission via extrance exam only
+                                    Admission via entrance exam only
                                 </li>
                             </ReactWoW>
                             <ReactWoW animation='slideInRight' delay='0.5s'>
