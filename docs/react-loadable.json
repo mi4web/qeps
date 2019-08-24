@@ -1,5 +1,5 @@
 {
-  "../../routes/routeNames": [
+  "./routeNames": [
     {
       "id": 2,
       "name": "./src/routes/routeNames.js",
@@ -27,7 +27,7 @@
       "publicPath": "static/js/main.1643d4ef.chunk.js"
     }
   ],
-  "./routerManager": [
+  "../../routes/routerManager": [
     {
       "id": 31,
       "name": "./src/routes/routerManager.js",
