@@ -23,7 +23,7 @@ class ContactComponent extends Component {
                         <br/>
                         Mob: <a href="tel:9818038295">+91 9818038295</a>
                         <br/>
-                        Email: <a href="mailto:er.sajid@hotmail.com">er.sajid@hotmail.com</a>
+                        Email: <a href="mailto:er.sajid@hotmail.com">qeps2018@gmail.com</a>
 
                     </div>
 
